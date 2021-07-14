@@ -13,6 +13,40 @@ body{
     object-fit: cover;
     width: 200px;
     height: 100%;
+    margin-right: 20px;
+}
+
+.navbar {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-icon{
+    width: 50px;
+    height: 50px
+}
+
+.bt_menu{
+    background-color: transparent;
+    border: 0px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.mobile-menu{
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+}
+
+.mobile-menu-closed{
+    display: none;
 }
 
 .nav{
@@ -64,4 +98,27 @@ body{
 .about .image img{
     width: 100%
 }
-  
+
+/* Responsive */
+
+@media screen and (max-width: 1024px){
+    .navbar{
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+    .nav-link {
+        display: none;
+    }
+    .logo {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .bt_menu{
+        display: none;
+    }
+    .nav-link {
+        display: inline-flex;
+    }
+}

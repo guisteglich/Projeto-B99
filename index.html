@@ -3,32 +3,61 @@
         <head>
             <link rel="stylesheet" href="style.css">
             <link rel="stylesheet" href="home.css">
+            <script>
+                function openMenu() {
+                    document.getElementById('btn').style.display = 'block'
+                    let navlink = document.getElementsByClassName("nav-link")
+                    for (nav of navlink){
+                        nav.classList.remove("mobile-menu-closed");
+                        nav.classList.add("mobile-menu");
+                    }
+                    document.getElementById('closebt').setAttribute('onclick', 'closeMenu()');
+                }
+
+                function closeMenu() {
+                    let navlink = document.getElementsByClassName("nav-link")
+                    for (nav of navlink){
+                        nav.classList.remove("mobile-menu");
+                        nav.classList.add("mobile-menu-closed");
+                    }
+                    document.getElementById('closebt').setAttribute('onclick', 'openMenu()');
+                }
+            </script>
         </head>
         <body>
             <header class="nav">
                 <div class="container">
-                    <div class="d-flex justify-content-between align-content-center">
-                        <div>
-                            <img src="./imgs/logo.png" class="logo object-fit-cover">
-                        </div>
-                        <div class="d-flex">
-                            <div>
-                                <a href="#" class="nav-link"> Inicio </a>
-                            </div>
-                            <div>
-                                <a href="#" class="nav-link"> Sobre </a>
-                            </div>
-                            <div>
-                                <a href="#" class="nav-link"> Personagens </a>
-                            </div>
-                            <div>
-                                <a href="#" class="nav-link"> Trailler </a>
-                            </div>
-                            <div>
-                                <a href="#" class="nav-link"> Galeria de fotos </a>
-                            </div>
-                        </div>
-                        <div> Clube B99 </div>
+                    <ul class="navbar" id="btn">
+                        <li>
+                            <img src="./imgs/logo.png" class="logo object-fit-cover" alt="logo" title="logo">
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link"> Inicio </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link"> Sobre </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link"> Personagens </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link"> Trailler </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link"> Galeria de fotos </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link"> Clube B99 </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <button class="bt_menu" id="closebt" onclick="openMenu()">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <svg class="menu-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve"><path fill="#231F20" d="M8.667,15h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,15,8.667,15z"/>
+                                <path fill="#231F20" d="M8.667,37h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,37,8.667,37z"/>
+                                <path fill="#231F20" d="M8.667,26h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,26,8.667,26z"/>
+                                </svg>
+                        </button>
                     </div>
                 </div>
             </header>
@@ -38,11 +67,11 @@
                         <div class="d-flex justify-content-around align-content-center">
                             <div class="history">
                                 <div class="title"> Sobre</div>
-                                <div class="text"> A série de comédia americana Brooklyn Nine-Nine, foi criada em 2013 por Dan Goor e Michael Schur e conta com 7 temporadas. Originalmente a série era transmitida pela Fox, atualmente é transmitida na NBC. Situado na 99.ª delegacia fictícia do Departamento de Polícia de Nova York, no Brooklyn, onde resulta o motivo do nome da série. A comédia policial americana gira em torno de Jake Peralta, um imaturo, mas talentoso, detetive da polícia de Nova York, que muitas vezes entra em conflito com seu novo comandante, o sério e severo capitão Raymond Holt. 
+                                <div class="text"> A série de comédia americana Brooklyn Nine-Nine, foi criada em 2013 por Dan Goor e Michael Schur e conta com 7 temporadas. Originalmente a série era transmitida pela Fox, atualmente é transmitida na NBC. Situado na 99.ª delegacia fictícia do Departamento de Polícia de Nova York, no Brooklyn, onde resulta o motivo do nome da série. A comédia policial americana gira em torno de Jake Peralta, um imaturo, mas talentoso, detetive da polícia de Nova York, que muitas vezes entra em conflito com seu novo comandante, o sério e severo capitão Raymond Holt.
                                 </div>
                             </div>
                             <div class="image">
-                                <img src="./imgs/brooklyn-99.jpg" class="">
+                                <img src="./imgs/brooklyn-99.jpg" class="" alt="banner" title="banner">
                             </div>
                         </div>
                     </div>
