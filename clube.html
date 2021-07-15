@@ -19,8 +19,8 @@
                 <br>
             </div>
 
-
-            <form>
+            <!-- #mudar o redicionamento para a página de galeria de fotos. -->
+            <form action="index.html">
                 <fieldset class="grupo">
 
                     <div class="campo">
@@ -34,13 +34,21 @@
                     </div>
                 </fieldset>
 
+                <fieldset class="grupo">
+
                     <div class="campo">
                         <label for="email"><strong> E-mail</strong></label>
                         <input type="email" name="email" id="email" required>
                     </div>
 
                     <div class="campo">
-                        <label><strong> Com qual personagem você mais se identifica:</strong></label>
+                        <label for="cidade"><strong>Cidade</strong></label>
+                        <input type="text" name="cidade" id="cidade">
+                    </div>
+                </fieldset>
+
+                    <div class="campo">
+                        <label><strong> Com qual personagem voce mais se identifica:</strong></label>
                         <label>
                             <input type="radio" name="personagens" value="jake">Jake Peralta
                         </label>
@@ -82,7 +90,7 @@
                         <textarea row="6" style="width: 26em;" id="historia" name="historia"></textarea>
                     </div>
 
-                    <button class="botao" type="submit" onsubmit="">Submeter</button>
+                    <button class="botao" type="submit" onsubmit="" >Submeter</button>
                 </fieldset>
             </form>
         </body>

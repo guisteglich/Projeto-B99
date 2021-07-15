@@ -26,7 +26,7 @@ fieldset {
 }
 
 body {
-    background-color: #0e0e02;
+    background-color:black;
     font-family: var(--family-titles);
     font-size: 1em;
     color: black;
@@ -39,6 +39,7 @@ input, select, textarea, button {
     font-family: sans-serif;
     font-size: 1em;
     color: yellow;
+    background-color: black;
     border-radius: 5px;
 }
 
@@ -82,13 +83,13 @@ fieldset.grupo .campo {
 
 .botao {
     font-size: 1.2em;
-    background: blanchedalmond;
+    background: white;
     border: 0px;
     margin-bottom: 1em;
     color: black;
     padding: 00.2em 0.6em;
     box-shadow: 2px 2px 2px black;
-    text-shadow: 1px 1px 1px gray;
+    text-shadow: 1px 1px 1px white;
     position: absolute;
     top: 90%;
     left: 50%;
