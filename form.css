@@ -3,17 +3,18 @@
 *{
     margin: 0;
     padding: 0;
+    background-size: cover;
 }
 
 #titulo{
     font-family: var(--family-titles);
-    color: #f7f700;
+    color: var(--primary-color);
     margin-left: 7%;
 }
 
 #subtitulo{
     font-family: var(--family-titles);
-    color: #f7f700;
+    color: var(--primary-color);
     margin-left: 10%;
 }
 
@@ -27,6 +28,7 @@ fieldset {
 
 body {
     background-color:black;
+    /* background-image: url('./imgs/tape.png'); */
     font-family: var(--family-titles);
     font-size: 1em;
     color: black;
@@ -57,7 +59,7 @@ input, select, textarea, button {
 
 .campo label {
     margin-bottom: 0.2em;
-    color: #f7f700;
+    color: var(--primary-color);
     display: block;
 }
 

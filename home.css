@@ -39,15 +39,6 @@ body{
     right: 20px;
 }
 
-.mobile-menu{
-    text-align: center;
-    margin-top: 20px;
-    display: block;
-}
-
-.mobile-menu-closed{
-    display: none;
-}
 
 .nav{
     padding: 30px;
@@ -121,4 +112,14 @@ body{
     .nav-link {
         display: inline-flex;
     }
+}
+
+.mobile-menu{
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+}
+
+.mobile-menu-closed{
+    display: none;
 }
