@@ -9,13 +9,13 @@
 #titulo{
     font-family: var(--family-titles);
     color: var(--primary-color);
-    margin-left: 7%;
+    margin-left: 2%;
 }
 
 #subtitulo{
     font-family: var(--family-titles);
     color: var(--primary-color);
-    margin-left: 10%;
+    margin-left: 7%;
 }
 
 #check{
@@ -29,8 +29,10 @@ fieldset {
 body {
     background-color:black;
     /* background-image: url('./imgs/tape.png'); */
-    font-family: var(--family-titles);
-    font-size: 1em;
+    /* font-family: var(--family-titles); */
+     /* font-size: 1em; */
+    font-family: sans-serif;
+    font-size: 20px;
     color: black;
     margin-left: 36%;
     margin-top: 2%;
