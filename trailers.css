@@ -1,0 +1,32 @@
+@import url(style.css);
+
+.conteudo{
+    padding: 40px 0px;
+    margin: 50px 75px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.977);
+}
+
+.conteudo .titulo{
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 26px;
+    font-family: var(--family-titles);
+}
+
+.conteudo > .temporadas{
+    font-size: 22px;
+    font-family: var(--family-texts);
+    text-align: justify;
+}
+
+.video{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.video .box{
+    margin: 0px 20px;
+    max-width: 50%;
+}
