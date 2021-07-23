@@ -4,6 +4,7 @@
     padding: 40px 0px;
     margin: 50px 75px;
     color: #fff;
+    font-family: var(--family-titles);
     background-color: rgba(0, 0, 0, 0.977);
 }
 
@@ -18,7 +19,7 @@
 .conteudo > .temporadas{
     font-size: 22px;
     font-family: var(--family-texts);
-    text-align: justify;
+    text-align: center;
 }
 
 .box{
