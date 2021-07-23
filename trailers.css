@@ -21,12 +21,28 @@
     text-align: justify;
 }
 
-.video{
-    display: flex;
-    justify-content: space-between;    
+.box{
+    justify-content: space-around;
+    width: 100%;
 }
 
-.video .box{
-    margin: 0px 20px;
-    max-width: 50%;
+.video-frame{
+    width: 350px;
+    height: 38vh;
+}
+
+
+@media screen and (max-width: 425px){
+    .video-frame{
+        width: 300px;
+        height: 38vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .box{
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
 }
