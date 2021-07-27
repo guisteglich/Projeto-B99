@@ -66,9 +66,16 @@ body{
     background-color: rgba(0, 0, 0, 0.977);
 }
 
+.about-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .about .history{
     margin: 0px 20px;
-    max-width: 50%;
+    padding-bottom: 30px;
 }
 
 .about .history > .title{
@@ -84,8 +91,8 @@ body{
 }
 
 .about .image{
+    margin-top: 30px;
     position: relative;
-    max-width: 40%;
 }
 
 .about .image img{
@@ -106,6 +113,21 @@ body{
         display: block;
     }
 }
+
+
+@media screen and (min-width: 1024px){
+    .about-block{
+        flex-direction: row;
+    }
+    .about .history{
+        max-width: 50%;
+        margin-bottom: 0px;
+    }
+    .about .image{
+        max-width: 40%;
+    }
+}
+
 
 @media screen and (min-width: 1025px){
     .bt_menu{
