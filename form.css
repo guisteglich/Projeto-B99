@@ -51,7 +51,7 @@ textarea{
 }
 
 .campo label {
-    margin-bottom: 0.2em;
+    margin-bottom: 5px;
     color: var(--primary-color);
     display: block;
 }
@@ -68,7 +68,7 @@ textarea{
     border: 0px;
     margin-bottom: 30px;
     color: black;
-    padding: 00.2em 0.6em;
+    padding: 5px 20px;
     box-shadow: 2px 2px 2px black;
     text-shadow: 1px 1px 1px white;
 }
