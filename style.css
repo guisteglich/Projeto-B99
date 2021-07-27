@@ -39,6 +39,10 @@ a{
     align-items: center;
 }
 
+.text-center{
+    text-align: center;
+}
+
 @media (min-width: 1200px){
     .container{
         max-width: 1140px;

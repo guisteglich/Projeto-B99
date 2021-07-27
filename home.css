@@ -1,6 +1,6 @@
 @import url("style.css");
 
-body{
+.background-body{
     margin: 0;
     background-image: url('./imgs/tape.png');
     background-color: #000;

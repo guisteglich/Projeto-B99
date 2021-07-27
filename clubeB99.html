@@ -1,103 +1,189 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <title>Home</title>
 
-            <title>ClubeB99</title>
-          
-            
-            <link rel="stylesheet" type="text/css" href="form.css">
-            
-            
-            <title>Cadastro Clube B99</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="home.css">
+            <link rel="stylesheet" href="form.css">
+            <link rel="stylesheet" href="footer.css">
 
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+            
             <link rel="icon" 
                 type="image/jpg" 
-                href="https://guisteglich.github.io/Projeto-B99/imgs/logo.png" />
+                href="imgs/logo.png" />
+            <script>
+                function openMenu() {
+                    document.getElementById('btn').style.display = 'block'
+                    let navlink = document.getElementsByClassName("nav-link")
+                    for (nav of navlink){
+                        nav.classList.remove("mobile-menu-closed");
+                        nav.classList.add("mobile-menu");
+                    }
+                    document.getElementById('closebt').setAttribute('onclick', 'closeMenu()');
+                }
+
+                function closeMenu() {
+                    let navlink = document.getElementsByClassName("nav-link")
+                    for (nav of navlink){
+                        nav.classList.remove("mobile-menu");
+                        nav.classList.add("mobile-menu-closed");
+                    }
+                    document.getElementById('closebt').setAttribute('onclick', 'openMenu()');
+                }
+            </script>
         </head>
-       
-        <body>
-
-            <div>
-                <h1 id="titulo">Cadastro fas de B99</h1>
-                <p id="subtitulo">Complete com suas informacoes</p>
-                <br>
-            </div>
-
-            <!-- #mudar o redicionamento para a página de galeria de fotos. -->
-            <form action="index.html">
-                <fieldset class="grupo">
-
-                    <div class="campo">
-                        <label for="nome"><strong>Nome </strong></label>
-                        <input type="text" name="nome" id="nome" required>
+       <body>
+            <header class="nav">
+                <div class="container">
+                    <ul class="navbar" id="btn">
+                        <li>
+                            <a href="index.html"><img src="./imgs/logo.png" class="logo object-fit-cover" alt="logo" title="logo"></a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="nav-link"> Inicio </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link"> Personagens </a>
+                        </li>
+                        <li>
+                            <a href="https://guisteglich.github.io/Projeto-B99/trailers.html" class="nav-link"> Trailers </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link"> Galeria de fotos </a>
+                        </li>
+                        <li>
+                            <a href="https://guisteglich.github.io/Projeto-B99/clubeB99.html" class="nav-link"> Clube B99 </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <button class="bt_menu" id="closebt" onclick="openMenu()">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <svg class="menu-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve"><path fill="#231F20" d="M8.667,15h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,15,8.667,15z"/>
+                                <path fill="#231F20" d="M8.667,37h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,37,8.667,37z"/>
+                                <path fill="#231F20" d="M8.667,26h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,26,8.667,26z"/>
+                                </svg>
+                        </button>
                     </div>
-
-                    <div class="campo"> 
-                        <label for="sobrenome"><strong> Sobrenome</strong></label>
-                        <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </header>
+            <section class="club">
+                <div class="container">
+                    <div class="text-center" id="titulo"> Cadastro de Fã B99 </div>
+                    <div class="text-center" id="subtitulo"> Complete com suas informações </div>
+                    <div class="d-flex justify-content-center">
+                        <form action="index.html">
+                            <fieldset class="grupo">
+                                <div class="campo">
+                                    <label for="nome"><strong>Nome </strong></label>
+                                    <input type="text" name="nome" id="nome" class="input_field" required>
+                                </div>
+            
+                                <div class="campo"> 
+                                    <label for="sobrenome"><strong> Sobrenome</strong></label>
+                                    <input type="text" name="sobrenome" id="sobrenome" class="input_field" required>
+                                </div>
+                            </fieldset>
+            
+                            <fieldset class="grupo">
+            
+                                <div class="campo">
+                                    <label for="email"><strong> E-mail</strong></label>
+                                    <input type="email" name="email" id="email" class="input_field" required>
+                                </div>
+            
+                                <div class="campo">
+                                    <label for="cidade"><strong>Cidade</strong></label>
+                                    <input type="text" name="cidade" class="input_field" id="cidade">
+                                </div>
+                            </fieldset>
+            
+                                <div class="campo">
+                                    <label><strong> Com qual personagem você mais se identifica?</strong></label>
+                                    <label>
+                                        <input type="radio" name="personagens" value="jake">Jake Peralta
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="personagens" value="amy">Amy Santiago
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="personagens" value="rosa">Rosa Diaz
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="personagens" value="boyle"> Charles Boyle
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="personagens" value="holt">Capitão Holt
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="personagens" value="terry">Terry Jeffords
+                                    </label>
+                                </div>
+            
+                                <div class="campo">
+                                    <label for="temporadas"><strong> Em qual temporada você está?</strong></label>
+                                    <select id="temporadas">
+                                        <option selected desable value>Selecione</option>
+                                        <option>1° temporada</option>
+                                        <option>2° temporada</option>
+                                        <option>3° temporada</option>
+                                        <option>4° temporada</option>
+                                        <option>5° temporada</option>
+                                        <option>6° temporada</option>
+                                        <option>7° temporada</option>
+                                    </select>
+                                </div>
+            
+            
+                                <div class="campo">
+                                    <br>
+                                    <label for="historia"><strong> Conte como você conheceu a série?</strong></label>
+                                    <textarea row="6" style="width: 26em;" id="historia" name="historia"></textarea>
+                                </div>
+                                <div class="btn-area">
+                                    <button class="botao" type="submit" onsubmit="" >Submeter</button>
+                                </div>
+                            </fieldset>
+                        </form>
                     </div>
-                </fieldset>
-
-                <fieldset class="grupo">
-
-                    <div class="campo">
-                        <label for="email"><strong> E-mail</strong></label>
-                        <input type="email" name="email" id="email" required>
+                </div>
+                
+            </section>
+            <footer class="footer">
+                <div class="container-footer">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Site</h4>
+                            <ul>
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="#">Personagens</a></li>
+                                <li><a href="trailers.html">Trailers</a></li>
+                                <li><a href="#">Galeria de fotos</a></li>
+                                <li><a href="clubeB99.html">ClubeB99</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="footer-col">
+                            <h4>Andrews P. Dutra</h4>
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/andrews_pd_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://github.com/AndrewsDutraPgMdR" target="_blank"><i class="fab fa-github"></i></i></a>
+                                <a href="https://www.linkedin.com/in/andrews-dutra/" target="_blank"><i class="fab fa-linkedin-in"></i></i></a>
+                            </div>
+                        </div>
+    
+                        <div class="footer-col">
+                            <h4> Guilherme S. de Oliveira</h4>
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/gui_steglich/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://github.com/guisteglich" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/guilherme-steglich/" target="_blank"><i class="fab fa-linkedin-in"></i></i></a>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </footer>
 
-                    <!-- <div class="campo">
-                        <label for="cidade"><strong>Cidade</strong></label>
-                        <input type="text" name="cidade" id="cidade">
-                    </div> -->
-                </fieldset>
-
-                    <div class="campo">
-                        <label><strong> Com qual personagem você mais se identifica?</strong></label>
-                        <label>
-                            <input type="radio" name="personagens" value="jake">Jake Peralta
-                        </label>
-                        <label>
-                            <input type="radio" name="personagens" value="amy">Amy Santiago
-                        </label>
-                        <label>
-                            <input type="radio" name="personagens" value="rosa">Rosa Diaz
-                        </label>
-                        <label>
-                            <input type="radio" name="personagens" value="boyle"> Charles Boyle
-                        </label>
-                        <label>
-                            <input type="radio" name="personagens" value="holt">Capitão Holt
-                        </label>
-                        <label>
-                            <input type="radio" name="personagens" value="terry">Terry Jeffords
-                        </label>
-                    </div>
-
-                    <div class="campo">
-                        <label for="temporadas"><strong> Em qual temporada você está?</strong></label>
-                        <select id="temporadas">
-                            <option selected desable value>Selecione</option>
-                            <option>1° temporada</option>
-                            <option>2° temporada</option>
-                            <option>3° temporada</option>
-                            <option>4° temporada</option>
-                            <option>5° temporada</option>
-                            <option>6° temporada</option>
-                            <option>7° temporada</option>
-                        </select>
-                    </div>
-
-
-                    <div class="campo">
-                        <br>
-                        <label for="historia"><strong> Conte como você conheceu a série?</strong></label>
-                        <textarea row="6" style="width: 26em;" id="historia" name="historia"></textarea>
-                    </div>
-
-                    <button class="botao" type="submit" onsubmit="" >Submeter</button>
-                </fieldset>
-            </form>
-        </body>
+       </body>
     </html>
