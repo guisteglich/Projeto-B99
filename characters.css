@@ -1,0 +1,52 @@
+@import url("style.css");
+
+
+.characters{
+    padding: 0px 15px;
+    background-color: #000;
+}
+
+.characters-title{
+    color: var(--primary-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.character{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.character-text{
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+
+.character-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.character-img img{
+    position: relative;
+    width: 50%;
+}
+
+@media screen and (min-width: 768px){
+    .character{
+        flex-direction: row;
+    }
+    .character-text{
+        width: 50%;
+    }
+    .character-img{
+        margin-bottom: 0px;
+    }
+}
