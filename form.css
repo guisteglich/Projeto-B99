@@ -3,13 +3,14 @@
 
 .club{
     background-color: #000;
+    height: 800px;
 }
 
 #titulo{
     color: var(--primary-color);
     padding-top: 30px;
     padding-bottom: 10px;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 #subtitulo{
@@ -24,7 +25,9 @@
 
 .campo{
     margin: 10px;
+    font-size: 16px;
 }
+
 
 /*.grupo:before, .grupo:after {
     display: table;
@@ -36,7 +39,7 @@
 
 input, select, textarea, button {
     font-family: sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
     color: yellow;
     background-color: black;
     border-radius: 5px;
@@ -54,6 +57,7 @@ textarea{
     margin-bottom: 5px;
     color: var(--primary-color);
     display: block;
+    font-size: 16px;
 }
 
 .btn-area{
