@@ -1,5 +1,11 @@
 @import url("style.css");
 
+.characters-background{
+    margin: 0;
+    background-image: url('../imgs/tape.png');
+    background-color: #000;
+    background-size: contain;
+}
 
 .characters{
     padding: 0px 15px;
@@ -7,25 +13,35 @@
 }
 
 .characters-title{
-    color: var(--primary-color);
+    font-family: var(--family-titles);
+    color: #ffffff;
     padding-top: 30px;
     padding-bottom: 30px;
-    font-size: 36px;
+    font-size: 26px;
     text-align: center;
 }
 
 .character{
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+}
+
+.character-name{
+    font-family: var(--family-texts);
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
 }
 
 .character-text{
+    font-family: var(--family-texts);
+    font-size: 20px;
     color: #ffffff;
     width: 100%;
-    text-align: center;
+    text-align: justify;
 }
 
 .character-img{
@@ -34,17 +50,21 @@
     margin-bottom: 20px;
 }
 
-.character-img img{
-    position: relative;
-    width: 50%;
-}
-
 @media screen and (min-width: 768px){
-    .character{
-        flex-direction: row;
+    .characters-title{
+        font-size: 36px;
+    }
+    .character-name{
+        margin-left: 50px;
     }
     .character-text{
-        width: 50%;
+        margin-left: 50px;
+        padding-right: 20px;
+        font-size: 22px;
+        width: 90%;
+    }
+    .character{
+        flex-direction: row;
     }
     .character-img{
         margin-bottom: 0px;
