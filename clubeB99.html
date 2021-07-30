@@ -15,7 +15,9 @@
             
             <link rel="icon" 
                 type="image/jpg" 
-                href="imgs/logo.png" />
+                href="imgs/logo.png"
+            />
+            <script type = "text/javascript" src="form.js"></script>
             <script>
                 function openMenu() {
                     document.getElementById('btn').style.display = 'block'
@@ -76,7 +78,7 @@
                     <div class="text-center" id="titulo"> Cadastro de Fã B99 </div>
                     <div class="text-center" id="subtitulo"> Complete com suas informações </div>
                     <div class="d-flex justify-content-center">
-                        <form action="index.html">
+                        <form action="certificado.html" onsubmit="saveData()" method="POST">
                             <fieldset class="grupo">
                                 <div class="campo">
                                     <label for="nome"><strong>Nome </strong></label>
@@ -105,7 +107,7 @@
                                 <div class="campo">
                                     <label><strong> Com qual personagem você mais se identifica?</strong></label>
                                     <label>
-                                        <input type="radio" name="personagens" value="jake">Jake Peralta
+                                        <input type="radio" name="personagens" value="jake" required>Jake Peralta
                                     </label>
                                     <label>
                                         <input type="radio" name="personagens" value="amy">Amy Santiago
@@ -126,24 +128,24 @@
             
                                 <div class="campo">
                                     <label for="temporadas"><strong> Em qual temporada você está?</strong></label>
-                                    <select id="temporadas">
+                                    <select id="temporadas" required>
                                         <option selected desable value>Selecione</option>
-                                        <option>1° temporada</option>
-                                        <option>2° temporada</option>
-                                        <option>3° temporada</option>
-                                        <option>4° temporada</option>
-                                        <option>5° temporada</option>
-                                        <option>6° temporada</option>
-                                        <option>7° temporada</option>
+                                        <option value="1">1° temporada</option>
+                                        <option value="2">2° temporada</option>
+                                        <option value="3">3° temporada</option>
+                                        <option value="4">4° temporada</option>
+                                        <option value="5">5° temporada</option>
+                                        <option value="6">6° temporada</option>
+                                        <option value="7">7° temporada</option>
                                     </select>
                                 </div>
                                 <div class="campo">
                                     <br>
                                     <label for="historia"><strong> Conte como você conheceu a série?</strong></label>
-                                    <textarea row="6" id="historia" name="historia"></textarea>
+                                    <textarea row="6" id="historia" name="historia" required></textarea>
                                 </div>
                                 <div class="btn-area">
-                                    <button class="botao" type="submit" onsubmit="" >Submeter</button>
+                                    <button class="botao" type="submit" >Submeter</button>
                                 </div>
                             </fieldset>
                         </form>
