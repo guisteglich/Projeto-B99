@@ -2,7 +2,7 @@
 
 .background-body{
     margin: 0;
-    background-image: url('./imgs/tape.png');
+    background-image: url('../imgs/tape.png');
     background-color: #000;
     background-size: contain;
 }

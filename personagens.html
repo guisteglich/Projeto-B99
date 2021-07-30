@@ -6,36 +6,19 @@
 
         <title>ClubeB99</title>
 
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="home.css">
-        <link rel="stylesheet" href="characters.css">
-        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/characters.css">
+        <link rel="stylesheet" href="css/footer.css">
 
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
         <link rel="icon"
               type="image/jpg"
-              href="imgs/logo.png" />
-        <script>
-            function openMenu() {
-                document.getElementById('btn').style.display = 'block'
-                let navlink = document.getElementsByClassName("nav-link")
-                for (nav of navlink){
-                    nav.classList.remove("mobile-menu-closed");
-                    nav.classList.add("mobile-menu");
-                }
-                document.getElementById('closebt').setAttribute('onclick', 'closeMenu()');
-            }
+              href="imgs/logo.png"
+        />
 
-            function closeMenu() {
-                let navlink = document.getElementsByClassName("nav-link")
-                for (nav of navlink){
-                    nav.classList.remove("mobile-menu");
-                    nav.classList.add("mobile-menu-closed");
-                }
-                document.getElementById('closebt').setAttribute('onclick', 'openMenu()');
-            }
-        </script>
+        <script type = "text/javascript" src="js/menu.js"></script>
     </head>
     <body>
         <header class="nav">
