@@ -14,7 +14,7 @@ async function renderData(){
 function hasData(){
     if (!localStorage.getItem('data')){
         alert('Você precisa preencher o formulário para ter acesso à essa página')
-        window.location.href = "../clubeB99.html";
+        window.location.href = "https://guisteglich.github.io/Projeto-B99/clubeB99.html";
         return
     }
     renderData()
