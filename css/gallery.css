@@ -1,0 +1,33 @@
+.gallery-background{
+    background-image: url('../imgs/tape.png');
+    background-color: #000000;
+    background-size: cover;
+}
+
+.gallery-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px 0px;
+}
+
+.gallery-img{
+    transition: transform 0.5s;
+}
+
+.gallery-img img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.gallery-img:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px){
+    .gallery-row{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
