@@ -19,10 +19,14 @@ body {
 
 .certified-title{
     padding-bottom: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
 }
 
 .certified-name{
     padding-bottom: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 55px;
 }
 
 .certified-text-block{
@@ -33,6 +37,8 @@ body {
 .certified-text{
     width: 48%;
     margin-bottom: 40px;
+    font-size: 26px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .certified-stamp{
