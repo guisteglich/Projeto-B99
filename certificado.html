@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/footer.css">
 
+        <link rel="stylesheet" href="css/certified.css">
+
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
         <link rel="icon"
@@ -21,13 +23,30 @@
     </head>
     <body onload="hasData()">
         <div class="container">
-            <div id="nome"></div>
-            <div id="sobrenome"></div>
-            <div id="email"></div>
-            <div id="cidade"></div>
-            <div id="personagens"></div>
-            <div id="temporada"></div>
-            <div id="historia"></div>
+            <div class="certified">
+                <div class="certified-image">
+                    <img src="./imgs/logo.png" class="logo object-fit-cover" alt="logo" title="logo">
+                </div>
+                <div class="text-center">
+                    <div class="certified-title">
+                        CONCEDEMOS ESTE CERTIFICADO À
+                    </div>
+                    <div class="certified-name" id="nome"></div>
+                    <div class="certified-text-block">
+                        <div class="certified-text">
+                            em reconhecimento ao seu gosto pela série Brooklyn Nine-Nine e por seu vínculo com clube B99.
+                        </div>
+                    </div>
+                    <div class="certified-stamp">
+                        <img src="./imgs/logo.png" class="logo object-fit-cover" alt="logo" title="logo">
+                    </div>
+                </div>
+                <div class="certified-button">
+                    <button onclick="print()">
+                        Baixar certificado
+                    </button>
+                </div>
+            </div>
         </div>
     </body>
 </html>

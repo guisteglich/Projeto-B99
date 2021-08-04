@@ -1,0 +1,64 @@
+@import url("style.css");
+
+body {
+    background-color: #000;
+    -webkit-print-color-adjust: exact !important;
+}
+
+.certified{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.certified-image{
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.certified-title{
+    padding-bottom: 30px;
+}
+
+.certified-name{
+    padding-bottom: 30px;
+}
+
+.certified-text-block{
+    display: flex;
+    justify-content: center;
+}
+
+.certified-text{
+    width: 48%;
+    margin-bottom: 40px;
+}
+
+.certified-stamp{
+    display: flex;
+    justify-content: center;
+}
+
+.certified-button button{
+    cursor: pointer;
+    margin-top: 100px;
+    border: 1px solid #000;
+    padding: 7px;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.certified-button button:hover{
+    background-color: #000;
+    color: #ffffff;
+}
+
+@media print {
+    body{
+        background-color: transparent;
+    }
+    .certified-button button {
+        display: none;
+    }
+}
